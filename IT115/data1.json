@@ -1,0 +1,14 @@
+{
+    "name": "Bubba",
+    "animal": "Cat",
+    "age": 2,
+    "city": "Seattle, WA",
+    "interests": [
+        "Purring",
+        "Eating",
+        "Napping",
+        "Playing",
+        "Belly rubs"
+    ],
+    "is_student": false
+}
