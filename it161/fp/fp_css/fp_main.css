@@ -1,0 +1,197 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Spectral');
+
+html {
+    background-color: lightgray;
+    font-family: 'Serif','Georgia';
+    font-size: 0.95em;
+    line-height: 1.5em;
+    background-image: url("../images/mybackground.jpg");  
+    background-repeat: repeat;
+    background-size: 2000px 1200px;
+}
+
+body{
+    margin:0; /* removes gap at top of page */
+}
+
+::selection {
+    color: #000; 
+    background: #ff0;
+}
+
+h1 {
+    font-weight: bold;
+    margin: auto;
+    background: #00002e;
+    line-height: 2.5em;
+    font-size: 4em;
+    color: white;
+    text-align: center;
+}
+/*
+ The border radius on h1.page-header and main.wrapper provide the 
+ curved corners that appear on the body area of the page
+*/
+h1.page-header{
+    font-family: 'Serif','Georgia';
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 5px;
+ }
+ 
+
+ main.wrapper {
+    background-color: white;
+    overflow: auto;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+ }
+ 
+
+p {
+    margin: 30px; /* Top Right Bottom Left (TRBL) */
+    text-align: center;
+    font-size: 18px;
+}
+
+h2 {
+    font-weight: normal;
+    line-height: 1em;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 4em;
+}
+
+h3 {
+    font-weight: normal;
+    line-height: 1em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+h4 {
+    font-weight: normal;
+    line-height: 1em;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+a {
+    color:darkcyan;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: darkcyan;
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+    color: white;
+    background: #00002e;
+}
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    main.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 79%;
+        padding-left: 1%;
+    }
+    
+    picture.profile1 img {
+        width: 100%;
+        float: left;
+        margin-right: 2em;
+        margin-bottom: 40px;
+    }
+
+    picture.profile2 img {
+        width: 50%;
+        float: left;
+        margin-left: 50px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    picture.profile3 img {
+        width: 30%;
+        float: left;
+        margin-left: 50px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    main.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
+    
+    picture.profile1 img1 {
+        width: 100%;
+        float: right;
+        margin-left: 1em;
+        margin-bottom: 15px;
+    }
+
+    picture.profile2 img2 {
+        width: 50%;
+        float: right;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 15px;
+    }
+
+    
+
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    main.wrapper {
+        width: 100%;
+    }
+    
+    h1 {
+        width: 99%;
+        padding-left: 1%;
+    }
+    
+    picture.profile1 img {
+        width: 100%;
+    }
+
+    picture.profile2 img {
+        width: 100%;
+    }
+    
+}
